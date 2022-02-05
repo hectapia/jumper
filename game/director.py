@@ -3,10 +3,10 @@ from game.word import Word
 
 
 class Director:
-    """It has the behavior to start the game"""
+    """This object has the main behavior to start the game and process the main code"""
 
     def __init__(self):
-        """constructor"""
+        #constructors, some come from the Word and the Parachute object
         self._parachute = Parachute()
         self._word = Word ()       
         self._random_word = self._word._initial_word 
@@ -16,6 +16,7 @@ class Director:
         self.check = 8 
         
     def _start_game(self):
+        #the order on how the game will be displayed
         self._blank_word = self._word._length()
         self._word._printlist(self._blank_word)
         self._parachute._show(self.check)
@@ -24,7 +25,13 @@ class Director:
             self._process()
 
     def _process(self):
+        """to process the input(the user guess) into the output (the parachute, displaying the corrected letters)"""
+
+        #get the input
         self._user_guess = input("Guess a letter [a-z]: ")
+
+        #Process the input into the output
+        #Replacing the dash in the blank word which is the length of the random word with the corrected letters
         if self._user_guess in self._random_word and f" {self._user_guess}" not in self._blank_word:
             random_word_indexes = []
             index_start = -1
@@ -62,6 +69,7 @@ class Director:
             self._parachute._show(self.check-1)
             self.check-=1
 
+        #the game is over when the self.check ==3 or all the dashes in the blank word are replaced
         if self.check == 3 or " _" not in self._blank_word:
             self._is_ending = False
             print("game over")    
