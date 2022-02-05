@@ -1,5 +1,5 @@
 import random
-
+# I'm reviewing Hector Olivares Tapia.
 class Word:
     """Behavior: retrieve a random word, and show the length of the random word"""
     def __init__(self):
