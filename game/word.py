@@ -1,5 +1,6 @@
 import random
-
+# I always suggest using the full module like "from random import random"
+#  even though you don't use the randint part,I saw that you specify the module
 class Word:
     """Behavior: retrieve a random word, and show the length of the random word"""
     def __init__(self):

@@ -4,6 +4,8 @@ class Parachute:
 
     def __init__(self):
         """constructor: a list of lines"""
+        # The symbols are used for the game graph 
+        # is that a syntax for it ?
         self._line1 = " / \ "
         self._line2 = " /!\ "
         self._line3 = "  o  "
