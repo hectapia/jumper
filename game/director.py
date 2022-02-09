@@ -1,7 +1,7 @@
 from game.parachute import Parachute
 from game.word import Word
 
-# Hector Olivares Tapia review
+# Hector Olivares Tapia reviewed today at noon
 
 class Director:
     """This object has the main behavior to start the game and process the main code"""
