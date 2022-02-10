@@ -1,4 +1,5 @@
 class TerminalService:
+    # Added by Hector Olivares Tapia as result of cse210 assignment. # 
     """A service that handles terminal operations.
     
     The responsibility of a TerminalService is to provide input and output operations for the 

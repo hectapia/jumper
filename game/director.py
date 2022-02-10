@@ -1,6 +1,6 @@
 from game.parachute import Parachute
 from game.word import Word
-# Changes added by Hector Olivares Tapia as result of cse210 assignment #
+# Changes added by Hector Olivares Tapia as result of cse210 assignment. #
 from game.terminal_service import TerminalService
 
 # Hector Olivares Tapia reviewed today at noon
@@ -17,7 +17,7 @@ class Director:
         self._user_guess = ""
         self._is_ending = True
         self.check = 8 
-        # Changes added by Hector Olivares Tapia as result of cse210 assignment #
+        # Changes added by Hector Olivares Tapia as result of cse210 assignment. #
         self._terminal_service = TerminalService()
         
     def _start_game(self):
@@ -33,7 +33,7 @@ class Director:
         """to process the input(the user guess) into the output (the parachute, displaying the corrected letters)"""
 
         #get the input
-        # Changes added by Hector Olivares Tapia as result of cse210 assignment #
+        # Changes added by Hector Olivares Tapia as result of cse210 assignment. #
         ask_letter = '\033[1;30;43m Guess a letter [a-z]: \033[0m' 
         self._user_guess = self._terminal_service.read_text(ask_letter) 
 
@@ -79,6 +79,6 @@ class Director:
         #the game is over when the self.check ==3 or all the dashes in the blank word are replaced
         if self.check == 3 or " _" not in self._blank_word:
             self._is_ending = False
-            # Changes added by Hector Olivares Tapia as result of cse210 assignment #
+            # Changes added by Hector Olivares Tapia as result of cse210 assignment. #
             end_game = ' Game Over ¨.¨ '
             self._terminal_service.write_text(end_game)    
