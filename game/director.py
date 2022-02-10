@@ -1,6 +1,6 @@
 from game.parachute import Parachute
 from game.word import Word
-# Changes added by Hector Olivares Tapia as result of cse210 assignment. #
+# Changes added by Hector Olivares Tapia as result of cse210 assignment #
 from game.terminal_service import TerminalService
 
 # Hector Olivares Tapia reviewed today at noon

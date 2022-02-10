@@ -1,5 +1,5 @@
 from game.terminal_service import TerminalService
-# Changes added by Hector Olivares Tapia as result of cse210 assignment. #
+# Changes added by Hector Olivares Tapia as result of cse210 assignment #
 import random
 # I always suggest using the full module like "from random import random"
 #  even though you don't use the randint part,I saw that you specify the module

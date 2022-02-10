@@ -3,4 +3,4 @@ from game.director import Director
 game = Director()
 game._start_game()
 
-# Hector Olivares Tapia had colaborated.
+# Hector Olivares Tapia had colaborated
