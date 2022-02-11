@@ -5,14 +5,18 @@ import random
 #  even though you don't use the randint part,I saw that you specify the module
 class Word:
     """Behavior: retrieve a random word, and show the length of the random word"""
+
+        # Identifying sensible variables and converting them in private guarantee
+        # an execution without risks of unpredictable changes into their values.
+        # added by Hector Olivares  Tapia.
     def __init__(self):
         #Constructor
-        self._list = ["carrot", "abide", "life", "radio", "message", "python", "github", "computer", "facebook", "school",
+        self.__list = ["carrot", "abide", "life", "radio", "message", "python", "github", "computer", "facebook", "school",
         "house", "instructor", "land", "constitution", "head", "english", "mouse", "screen", "banana", "clock", "phone", "roof",
         "activity", "feeling", "calendar", "price", "excel", "spoon", "wall", "kingdom", "eternal", "keyboard", "violin", "discipline",
         "guitar", "documents", "jumper", "corporation", "word", "parachute", "game", "table", "funny", "learn", "education", "black","history",
         "coding", "prediction", "random", "agency", "atonement", "windows", "yard", "difficulty", "road", "pathway", "scissor", "decoration"]
-        self._initial_word = random.choice(self._list)
+        self._initial_word = random.choice(self.__list)
         # Changes added by Hector Olivares Tapia as result of cse210 assignment. #
         self._terminal_service = TerminalService()         
 

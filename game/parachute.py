@@ -7,15 +7,19 @@ class Parachute:
         """constructor: a list of lines"""
         # The symbols are used for the game graph 
         # is that a syntax for it ?
-        self._line1 = " / \ "
-        self._line2 = " /!\ "
-        self._line3 = "  o  "
-        self._line4 = " \ / "
-        self._line5 = "\   /"
-        self._line6 = " ___ "
-        self._line7 = "/   \ "
-        self._line8 = " ___ "
-        self._line = [self._line8, self._line7, self._line6, self._line5, self._line4, self._line3, self._line2, self._line1] 
+
+        # Identifying sensible variables and converting them in private guarantee
+        # an execution without risks of unpredictable changes into their values.
+        # added by Hector Olivares  Tapia.
+        self.__line1 = "  / \  "
+        self.__line2 = "  /!\  "
+        self.__line3 = "   o   "
+        self.__line4 = "  \ /  "
+        self.__line5 = " \   / "
+        self.__line6 = "  ___  "
+        self.__line7 = ' /   \ '
+        self.__line8 = "  ___  "
+        self.__line = [self.__line8, self.__line7, self.__line6, self.__line5, self.__line4, self.__line3, self.__line2, self.__line1] 
 
     def _show(self,check):
         """to print the list of lines depending on the parameter called check,
@@ -25,11 +29,9 @@ class Parachute:
 
         #when the check is equal to 3, it will be game over and the self._line3 will turns into "  x  "
         if check == 3:
-            self._line[5] = "  x  "
+            self.__line[5] = "  x  "
         for i in range(8):
             if i <= (7 - check):
                 continue
-            print(self._line[i])
+            print(self.__line[i])
             
-
-
