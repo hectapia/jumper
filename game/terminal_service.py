@@ -5,7 +5,8 @@ class TerminalService:
     The responsibility of a TerminalService is to provide input and output operations for the 
     terminal.
     """
-
+    # we are working with public methods 
+    
     def read_text(self, prompt):
         """Gets text input from the terminal. Directs the user with the given prompt.
 
