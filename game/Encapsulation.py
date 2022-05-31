@@ -1,6 +1,7 @@
 # By Hector Olivares Tapia.
 # What is encapsulation and why is it important?
 # How did you apply encapsulation to your program's design?
+# How did you use access control in the completed program?
 
 class Encapsulation:
     def __init__(self):
